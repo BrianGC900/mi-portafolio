@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="html_finalprojimages/Logo BRIAN.png">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Brian Joha Garcia Cruz
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          <a href="mailto:johabrian900@gmail.com">johabrian900@gmail.com</a>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +(52) 9513068932
+        </div>
+
+
+
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">Sobre Mi</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Proyectos</a>
+          <a class="topmenu" href="#material">Material</a>
+          <a class="topmenu" href="#recommendations">Recomendaciones</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+
+        <div class="idioma">
+          <label id="label" for="languageSelector"></label>
+          <select id="languageSelector" onchange="onLanguageChange()">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+          </select>
+        </div>
+
+      </div>   
+
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/pixel-art-13602_512.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hola, Soy BrianGC! 
+          </h1>
+          <p>
+            Soy un desarrollador full stack con experiencia en desarrollo web y de aplicaciones de escritorio, especializado en Java, C#, y ASP.NET.
+            He trabajado en la implementación de aplicaciones utilizando Tomcat, Payara, y servidores en Azure, aplicando el patrón MVC para una arquitectura organizada y escalable.
+            Además, tengo experiencia en la creación de API con JSP y en el uso de bases de datos SQL Server.
+            También soy competente en la configuración de servidores en entornos Windows y Linux.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 años de experiencia</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1  de experiencia</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>css</h6>
+          <p>2 años de experiencia</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>1 año de experiencia</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/formato-de-archivo-abierto-jsp-con-logotipo-de-java.png"/>
+          <h6>JSP</h6>
+          <p>1 año de experiencia</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/icons8-c-sharp-logo-96.png"/>
+          <h6>C#</h6>
+          <p>1.5 años de experiencia</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/aspnet.png"/>
+          <h6>ASP .Net</h6>
+          <p>1.5 año de experiencia</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/icons8-git-96.png"/>
+          <h6>Git</h6>
+          <p>1 año de experiencia</p>
+        </div> 
+        
+        <div class="skill">
+          <img src="html_finalprojimages/servidor-sql.png"/>
+          <h6>SQL Server</h6>
+          <p>1 año de experiencia</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/azur.png"/>
+          <h6>Azure</h6>
+          <p>1 año de experiencia</p>
+        </div>
+        
+        <div class="skill">
+          <img src="html_finalprojimages/icons8-tomcat-96.png"/>
+          <h6>Apache Tomcat</h6>
+          <p>1 año de experiencia</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/gnu-bash.png"/>
+          <h6>Bash</h6>
+          <p>1 año de experiencia</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/linux.png"/>
+          <h6>Linux</h6>
+          <p>2 años de experiencia</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/interfaz-de-usuario.png"/>
+          <h6>UX/UI</h6>
+          <p>1 año de experiencia</p>
+        </div> 
+
+        
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Proyectos
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Control de entradas y salidas</h3>
+            <ul>
+              <li>Desarrolle un sistema para gestionar entradas y salidas del personal para una dependencia de gobierno, utilizando C#, WindowsForms y sqlserver.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Validaciones</h3>
+            <ul>
+              <li>Implemente validaciones para el manejo de CFDIs como parte del back en una plataforma de contabilidad desarrollada en JSP.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Inventarios</h3>
+            <ul>
+              <li>Desarrolle un sistema de Inventarios para una dependencia de gobierno para el uso de informacion veráz en el conocimiento del estado de sus vehiculos.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!--Material-->
+    <section id="material">
+      <h2>Material</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_material">
+        <a href="pdf/Js API y sus basicos.pdf" target="_blank" class="material-link">
+          <div class="material">
+              <img src="html_finalprojimages/pdf.png" />
+              <h6>Js API y sus basicos</h6>
+          </div>
+        </a>
+
+        <a href="pdf/Guía visual de una consulta SQL.pdf" target="_blank" class="material-link">
+          <div class="material">
+              <img src="html_finalprojimages/pdf.png" />
+              <h6>Guía visual de una consulta SQL</h6>
+          </div>
+        </a>
+
+        <a href="pdf/HTML y sus basicos.pdf" target="_blank" class="material-link">
+          <div class="material">
+              <img src="html_finalprojimages/pdf.png" />
+              <h6>HTML y sus basicos</h6>
+          </div>
+        </a>
+
+        <a href="pdf/Js Web Aplicaciones.pdf" target="_blank" class="material-link">
+          <div class="material">
+              <img src="html_finalprojimages/pdf.png" />
+              <h6>Js Web Material</h6>
+          </div>
+        </a>
+
+      </div>
+    </section>    
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recomendaciones</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>"</span>
+          Brian aprende muy rápido y comprende rápidamente los conceptos clave del desarrollo web.
+          Tiene una gran actitud y es un excelente compañero de equipo.
+          Tiene una mente curiosa y hace las preguntas correctas.
+          <span>"</span>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Haz una recomendación</legend>          
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Enviar</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Gracias por tu recomendación</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
