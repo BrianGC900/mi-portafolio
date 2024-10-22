@@ -5,14 +5,14 @@ body {
   /* Navigation Bar */
   
   #home {
-    background-color:  #e62626;
-    padding-bottom: 1cm;
-    margin-left:-1cm;
-    margin-right:-1cm;
-    margin-top:-1cm;
-    padding-top: 2cm;
-    padding-bottom: 2cm;
-    height: 5mm;
+    background-color: #1a1a1a; /* Color de fondo oscuro similar a la segunda imagen */
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    margin-left:-0.2cm;
+    margin-right:-0.2cm;
+    margin-top:-0.2cm;
    }
   
    #send{
@@ -20,18 +20,39 @@ body {
    }
 
   .topmenu {
-    color: lightgray;
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
-    text-decoration:none;
+    color: white; /* El texto permanece blanco */
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out; /* Transición para el color del texto */
+  }
+
+  .topmenu::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #b01ee9; /* Color rosado de la línea subrayada */
+    transition: width 0.3s ease-in-out; /* Transición suave de la línea subrayada */
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+  }
+  
+  .topmenu:hover::after {
+    width: 100%; /* Ancho completo al hacer hover */
+    left: 0;
+    right: auto;
   }
   
   .topmenu:hover {
-    color: white;
-    font-weight: bolder;
-    text-decoration: underline;
-    /* Add the styles here */
+    color: white; /* El texto se queda blanco al hacer hover */
   }
   
   .topdiv {
@@ -39,11 +60,30 @@ body {
     padding-right: 1cm;
   }
 
+  /* Agregar estilo para dispositivos móviles */
+@media (max-width: 768px) {
+  #home {
+      padding: 1cm 0;
+  }
+  
+  .topmenu {
+      font-size: 16px;
+      margin: 5px;
+      padding: 10px;
+  }
+
+  .topdiv {
+      float: none;
+      text-align: center;
+      padding-right: 0;
+  }
+  }
+
   .idioma{
     display: block;
-    margin-top: 50px; /* Ajusta este valor para cambiar la distancia debajo de "Recomendaciones" */
+    margin-top: 50px; 
     padding-right: 2cm;
-    text-align: right;
+    text-align: left;
     z-index: 1;
   }
   
@@ -63,7 +103,7 @@ body {
   }
   
   .contact_info img {
-    width:25px;
+    width:35px;
     margin-right: 10px;
     float:left;
   }
