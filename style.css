@@ -39,7 +39,7 @@ body {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #b01ee9; /* Color rosado de la línea subrayada */
+    background: #0583F2; /* Color rosado de la línea subrayada */
     transition: width 0.3s ease-in-out; /* Transición suave de la línea subrayada */
     -webkit-transition: width 0.3s ease-in-out;
     -moz-transition: width 0.3s ease-in-out;
@@ -115,7 +115,7 @@ body {
     font-size: 50px;
     text-align: center;
     float: left;
-    color: #7600bc;
+    color: #1A80D9;
     margin: 30px;
     margin-left: 60px;
     margin-top: 40px;
@@ -149,7 +149,7 @@ body {
   #about-me h1 {
     font-size: 65px;
     margin-top: 90px;
-    color: #7600bc;
+    color: #0265a3;
   }
   
   #about-me p {
@@ -275,6 +275,16 @@ body {
     margin-top: 30px;
     margin-left: 60px;
   }
+
+  .project-title {
+    display: flex; /* Activamos flexbox */
+    align-items: center; /* Alineamos los elementos verticalmente al centro */
+    gap: 10px; /* Espaciado entre el texto y la imagen */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
   
   .projects-container hr {
     border: 1px solid lightgray;
@@ -285,6 +295,8 @@ body {
   .project-card {
     margin: 0 15px 15px 30px;
     padding-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
   }
   
   .project-card h3 {
@@ -297,6 +309,23 @@ body {
     margin-left: 30px;
   }
   
+  .project-link {
+    display: inline-block; /* Hace que el enlace sea un bloque alineado con el texto */
+    text-decoration: none;
+  }
+
+  .project-image {
+    width: 30px; /* Ajusta el tamaño según tus preferencias */
+    height: 30px;
+    border-radius: 4px; /* Opcional: bordes redondeados */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .project-image:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Efecto de agrandamiento en hover */
+  }
+
   /* Recommendations */
   
   .all_recommendations {
@@ -324,7 +353,7 @@ body {
   }
   
   .recommendation span {
-    color: #7600bc;
+    color: #1A80D9;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -335,7 +364,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 100%;
-    background-color: #7600bc;
+    background-color: #1A80D9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,6 +372,11 @@ body {
     right: 3%;
     bottom: 3%;
     cursor: pointer;
+  }
+
+  .iconbutton:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Efecto de agrandamiento en hover */
   }
   
   /* Form Pop-up */
@@ -366,8 +400,8 @@ body {
   
   .popup button {
     background-color: #fff;
-    border: 1px solid #7600bc;
-    color: #7600bc;
+    border: 1px solid #1A80D9;
+    color: #1A80D9;
     display: block;
     border-radius: 6px;
     text-align: center;
@@ -380,8 +414,8 @@ body {
   
   .popup button:hover {
     background-color: #fff;
-    border: 2px solid #7600bc;
-    color: #7600bc;
+    border: 2px solid #1A80D9;
+    color: #1A80D9;
     display: block;
     font-weight: bolder;
     text-align: center;
@@ -392,10 +426,24 @@ body {
   /* Recommendation Form */
   
   input, textarea {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    margin: 10px;  
-    width:100%;
-  }
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    width: 100%;
+    border: 2px solid #1A80D9;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    resize: none; /* Evita redimensionar el textarea */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #1A80D9;
+    box-shadow: 0px 0px 8px rgba(26, 128, 217, 0.5);
+}
   
   fieldset {
     display: flexbox;
@@ -412,8 +460,8 @@ body {
   
   button {
     background-color: #fff;
-    border: 1px solid #7600bc;
-    color: #7600bc;
+    border: 1px solid #1A80D9;
+    color: #1A80D9;
     display: block;
     border-radius: 6px;
     text-align: center;
@@ -424,11 +472,11 @@ body {
   }
   
   button:hover {
-    background-color: #7600bc;
-    border: 1px solid #7600bc;
+    background-color: #1A80D9;
+    border: 1px solid #1A80D9;
     color: #fff;
     display: block;
-    border-radius: 6px;
+    border-radius: 4px;
     text-align: center;
     cursor: pointer;
   }
